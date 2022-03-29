@@ -69,6 +69,9 @@ const Home = () => {
                                 <Input htmlFor="password" type="password" name="password" id="password"
                                     value={password} label="Password"
                                     onChange={(e) => setPassword(e.target.value)} />
+                                <span className='precaution'>Password should contain one special <br />
+                                    character, uppercase and lowercase characer and one numeric</span>
+
                                 <Input htmlFor="confirmPassword" type="password" name="confirmPassword" id="confirmPassword"
                                     value={confirmPassword} label="Confirm Password"
                                     onChange={(e) => setConfirmPassword(e.target.value)}
@@ -77,10 +80,10 @@ const Home = () => {
                                 {/* displaying error message if both password did not matched */}
                                 {
                                     error === "" ?
-                                        "" : 
+                                        "" :
                                         <div className='msg'>
                                             <h4 className='error-msg'>{error}</h4>
-                                            </div>
+                                        </div>
                                 }
                                 <div className='btn'>
                                     <button type='submit'>Login</button>
@@ -91,10 +94,10 @@ const Home = () => {
                         :
 
                         // display the credentials that are entered 
-                        <div>
+                        <div className='details'>
                             <Heading heading="Login Credentials" />
-                            <p>Your Name - {loginCredential.name}</p>
-                            <p>Your email - {loginCredential.email}</p>
+                            <p><span>Your Name</span> - {loginCredential.name}</p>
+                            <p><span>Your email</span> - {loginCredential.email}</p>
                             <div className='btn'>
                                 <button onClick={() => window.location.reload()}>Home Page 🏠</button>
                             </div>
