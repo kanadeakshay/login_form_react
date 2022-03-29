@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.error-msg{
+    color: red;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.btn{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.btn button{
+    padding: 8px;
+    font-size: medium;
+    text-transform:uppercase;
+    font-weight: bold;
+    border: none;
+    background-color: #2196f3;
+    border-radius: 2px;
+    cursor: pointer;
+}
