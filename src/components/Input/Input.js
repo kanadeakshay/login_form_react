@@ -7,7 +7,7 @@ const Input = (props) => {
     return (
         <div className="form-input">
             <label htmlFor={htmlFor}>{label}</label>
-            <input type={type} name={name} id={id} autoComplete='off'
+            <input type={type} name={name} id={id} autoComplete="off"
                 required
                 value={value}
                 onChange={onChange}

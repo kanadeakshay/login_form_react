@@ -10,7 +10,8 @@
     align-items: center;
 }
 .precaution{
-    min-width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 .msg{
     display: flex;

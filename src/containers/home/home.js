@@ -69,9 +69,12 @@ const Home = () => {
                                 <Input htmlFor="password" type="password" name="password" id="password"
                                     value={password} label="Password"
                                     onChange={(e) => setPassword(e.target.value)} />
-                                <span className='precaution'>Password should contain one special <br />
-                                    character, uppercase and lowercase characer and one numeric</span>
-
+                                <div className='precaution'>
+                                    <span>- Password should contain one uppercase </span>
+                                    <span>- Password should contain one lowercase </span>
+                                    <span>- Password should contain one number </span>
+                                    <span>- Password should contain one special char </span>
+                                </div>
                                 <Input htmlFor="confirmPassword" type="password" name="confirmPassword" id="confirmPassword"
                                     value={confirmPassword} label="Confirm Password"
                                     onChange={(e) => setConfirmPassword(e.target.value)}
